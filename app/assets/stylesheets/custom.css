@@ -22,6 +22,10 @@ section {
 	background: #fff;
 }
 
+section h1 {
+	font-size: 200%;
+}
+
 /* Links */
 
 a {
@@ -84,6 +88,12 @@ nav ul li a:hover {
 	font-size: 150%;
 	font-weight: bold;
 	padding: 20px;
+}
+
+.signup_button:hover,
+.signup_button:visited {
+	color: #fff;
+	text-decoration: none;
 }
 
 /* Round corners */
