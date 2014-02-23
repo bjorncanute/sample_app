@@ -116,7 +116,31 @@ footer nav {
 	float: none;
 }
 
+/* User show page */
 
+.profile-wrapper {
+	overflow: hidden;
+	*zoom: 1;
+	position: relative;
+}
+
+.main {
+	width: 68%;
+	float: left;
+	padding: 1%;
+}
+
+.profile-sidebar {
+	width: 28%;
+	float: left;
+	padding: 1%;
+	background-color: #ffc;
+}
+
+.gravatar {
+	border: 1px solid #999;
+	margin-bottom: -15px;
+}
 
 
 
