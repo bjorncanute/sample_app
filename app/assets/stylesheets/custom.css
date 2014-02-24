@@ -142,7 +142,11 @@ footer nav {
 	margin-bottom: -15px;
 }
 
+/*	Sign up form */
 
+.field, .actions {
+	margin: 10px;
+}
 
 
 
