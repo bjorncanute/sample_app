@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+	
 
   def new
   	@title = "Sign in"
@@ -13,6 +14,8 @@ class SessionsController < ApplicationController
 	  	render 'new'
 	else
 		# Handle successful signin.
+		sign_in user
+		redirect_to user
 	end
   end
   def destory 
