@@ -39,6 +39,11 @@ module SessionsHelper
 	# 	User.authenticate_with_salt(*remember_token)
 	# end
 
+    def deny_access
+		redirect_to signin_path, :notice => "Please sign in to access this page."
+    end
+
+
 	private
 		def user_from_remember_token
 			User.authenticate_with_salt(*remember_token)
