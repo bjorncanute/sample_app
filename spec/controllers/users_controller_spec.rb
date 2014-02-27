@@ -85,9 +85,9 @@ describe UsersController do
 
     describe "Success" do
       before(:each) do
-        @attr = { :name => "New User", 
-                  :email => "newuser@example.com", 
-                  :password => "foobar", 
+        @attr = { :name                  => "Michael Harl", 
+                  :email                 => "mhartl@example.com", 
+                  :password              => "foobar", 
                   :password_confirmation => "foobar" }
       end
 
@@ -102,10 +102,19 @@ describe UsersController do
         response.should redirect_to(user_path(assigns(:user)))
       end
 
+      it "should sign the user in upon successfully creating user" do
+        post :create, :user => @attr
+        # controller.should be_signed_in
+        # controller.signed_in? == true
+        controller.should be_signed_in # Should return true // but doesn't
+      end
+
       it "should have a welcome message" do
         post :create, :user => @attr
         flash[:success].should =~ /welcome to the sample app!/i
       end
     end
+
+
   end
 end
