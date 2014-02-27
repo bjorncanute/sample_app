@@ -11,12 +11,13 @@ class SessionsController < ApplicationController
   		flash.now[:error] = "Invalid Email/password combination."
   		@title = "Sign in"
 	  	render 'new'
-	else
-		# Handle successful signin.
-		sign_in user
-		redirect_to user
-	end
+    else
+		  # Handle successful signin.
+		  sign_in user
+		  redirect_back_or user
+	  end
   end
+
   def destroy 
   	sign_out
   	redirect_to root_path
