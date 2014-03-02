@@ -201,6 +201,53 @@ footer nav {
 	list-style: none;
 }
 
+/* Microposts styling */
+
+.microposts {
+	padding-top: 2em;
+	list-style: none;
+}
+
+.micropost {
+	border-top: 1px solid #ccc;
+	padding: 1em 0;
+}
+
+.micropost .content {
+	font-size: 1.3em;
+	margin-bottom: .5em;
+}
+
+.micropost .timestamp {
+	display: block;
+	font-size: 85%;
+	color: #666;
+}
+
+.user_info img {
+	padding-right: 0.1em;
+}
+
+.user_info a {
+	text-decoration: none;
+}
+
+.user_info .user_name {
+	position: absolute;
+}
+
+.microposts {
+	font-size: 80%;
+}
+
+.new-micropost {
+	margin-bottom: 2em;
+}
+
+.new-micropost textarea {
+	height: 4em;
+	margin-bottom: 0;
+}
 
 
 
