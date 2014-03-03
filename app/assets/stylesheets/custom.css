@@ -118,7 +118,8 @@ footer nav {
 
 /* User show page */
 
-.profile-wrapper {
+.profile-wrapper,
+.home-feed {
 	overflow: hidden;
 	*zoom: 1;
 	position: relative;
@@ -249,10 +250,42 @@ footer nav {
 	margin-bottom: 0;
 }
 
+/* Feed styling */
 
+.micropost-form textarea {
+	height: 60px;
+}
 
+.user-info {
+	width: 28%;
+	float: left;
+	padding: 1%;
+	background-color: #ffc;
+}
 
+.user-info .wrapper {
+	padding: 1em;
+}
 
+.user-info .gravatar {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: .4em;
+}
+
+.user-info .user-name {
+	font-size: 1.2em;
+	display: block;
+	line-height: 1em;
+}
+
+.user-info .microposts-count {
+	font-size: 1em;
+	display: block;
+	line-height: 1em;
+	margin-left: 40px;
+}
 
 
 

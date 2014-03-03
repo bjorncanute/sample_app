@@ -144,7 +144,7 @@ describe UsersController do
 
   describe "POST 'create'" do
 
-    describe "Failiure" do
+    describe "faliure" do
 
       before(:each) do
         @attr = { :name => "", 
