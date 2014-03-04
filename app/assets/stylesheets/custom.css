@@ -210,6 +210,7 @@ footer nav {
 }
 
 .micropost {
+	overflow: hidden;
 	border-top: 1px solid #ccc;
 	padding: 1em 0;
 }
@@ -238,7 +239,7 @@ footer nav {
 }
 
 .microposts {
-	font-size: 80%;
+	/*font-size: 80%;*/
 }
 
 .new-micropost {
@@ -287,8 +288,43 @@ footer nav {
 	margin-left: 40px;
 }
 
+.micropost-feed {
+	margin-top: 3em;
+}
 
+.micropost-feed-item {
+	overflow: hidden;
+	padding-top: 1em;
+	border-top: 1px solid #ccc;
+	list-style: none;
+}
 
+.micropost-feed-item .gravatar {
+	width: 50px;
+	height: 50px;
+	float: left;
+	border: 0;
+}
+
+.micropost-feed-item .body {
+	float: left;
+	padding-left: 10px;
+	/*width: 362px;*/
+	width: 350px;
+} 
+
+.micropost-feed-item .content {
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+.micropost-feed-item .timestamp {
+	color: #666;
+} 
+
+.delete {
+	float: right;
+}
 
 
 
