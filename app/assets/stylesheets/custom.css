@@ -226,18 +226,6 @@ footer nav {
 	color: #666;
 }
 
-.user_info img {
-	padding-right: 0.1em;
-}
-
-.user_info a {
-	text-decoration: none;
-}
-
-.user_info .user_name {
-	position: absolute;
-}
-
 .microposts {
 	/*font-size: 80%;*/
 }
@@ -257,11 +245,12 @@ footer nav {
 	height: 60px;
 }
 
-.user-info {
+.feed-sidebar {
 	width: 28%;
 	float: left;
 	padding: 1%;
 	background-color: #ffc;
+	position: relative;
 }
 
 .user-info .wrapper {
@@ -326,7 +315,25 @@ footer nav {
 	float: right;
 }
 
+/* Followers / Following */
 
+.stats {
+	position: relative;
+	padding: 10%;
+}
+
+.stat {
+	width: 40%;
+	display: inline-block;
+}
+
+/* All users */
+
+.users li {
+	height: 3em;
+	padding: .5em 0;
+	border-bottom: 1px #ccc solid;
+}
 
 
 
