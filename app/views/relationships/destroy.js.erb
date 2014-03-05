@@ -1,0 +1,2 @@
+$("#follow_form").empty().append("<%= escape_javascript(render('users/follow')) %>");
+$("#followers").empty().append('<%= "#{@user.followers.count} followers" %>');
