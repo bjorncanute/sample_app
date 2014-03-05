@@ -327,6 +327,22 @@ footer nav {
 	display: inline-block;
 }
 
+.follow-feed {
+	overflow: hidden;
+}
+
+.follow-feed .users {
+	width: 68%;
+	float: left;
+}
+
+aside.sidebar {
+	width: 28%;
+	width: 20%;
+	float: left;
+	background-color: #ffc;
+}
+
 /* All users */
 
 .users li {

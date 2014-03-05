@@ -1,0 +1,21 @@
+<div class="follow-feed">
+	<%= @title %>
+	<% if @users.any? %>
+
+		<ul class="users">
+			<%= render @users %>
+		</ul>
+	<% end %>
+
+	<aside class="sidebar round">
+		<p>Name <%= @user.name %></p>
+		<p>URL <%= link_to user_path(@user), @user %></p>
+		<p>Microposts <%= @user.microposts.count %></p>
+		<%= render 'shared/stats' %>
+		<% if @users.any? %>
+			<% @users.each do |user| %>
+				<%= link_to gravatar_for(user, :size => 30), user %>
+			<% end %>
+		<% end %>
+	</aside>
+</div>
